@@ -1,4 +1,5 @@
 # Amazon EC2 Auto-Config
+# Post-installation Wordpress Config
 # RONGXIN LIU
 # 2019
 
@@ -19,5 +20,7 @@ then
   sed -i "$ a RewriteRule . /index.php [L]" .htaccess
   sed -i "$ a </IfModule>" .htaccess
   sed -i "$ a # END WordPress" .htaccess
+  cd /etc/apache2
+  sed -e "\$aInclude /etc/phpmyadmin/apache.conf" apache2.conf
   systemctl restart apache2
 fi

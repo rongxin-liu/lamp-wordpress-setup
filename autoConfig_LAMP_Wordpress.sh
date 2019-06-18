@@ -1,5 +1,5 @@
 # Amazon EC2 Auto-Config
-# LAMP stack setup
+# LAMP Stack Setup
 # RONGXIN LIU
 # 2019
 
