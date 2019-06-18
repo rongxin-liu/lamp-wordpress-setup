@@ -21,6 +21,6 @@ then
   sed -i "$ a </IfModule>" .htaccess
   sed -i "$ a # END WordPress" .htaccess
   cd /etc/apache2
-  sed -e "\$aInclude /etc/phpmyadmin/apache.conf" apache2.conf
+  sed -i "$ a Include /etc/phpmyadmin/apache.conf" apache2.conf
   systemctl restart apache2
 fi
