@@ -16,7 +16,7 @@ read -p "Install System Utilities?" -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-  apt-get install -y vim nano curl
+  apt-get install -y vim nano curl unzip
 fi
 
 # Install and Configure Firewall
